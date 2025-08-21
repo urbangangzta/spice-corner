@@ -1,10 +1,74 @@
 <!DOCTYPE html>
-<html>
-<head><title>Spice Corner with Assets</title></head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spice Corner - Material Design Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@material/web/all.js?render-blocking=be" async></script>
+</head>
 <body>
-<img src='assets/images/biryani.jpg'>
-<img src='assets/images/butter-chicken.jpg'>
-<img src='assets/images/paneer-tikka.jpg'>
-<img src='assets/images/chilli-chicken.jpg'>
+
+  <md-toolbar>
+    <span class="toolbar-title">🍽️ Spice Corner</span>
+    <div style="flex: 1;"></div>
+    <a href="order.html"><md-filled-button>Order Now</md-filled-button></a>
+  </md-toolbar>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Authentic Flavors, Delivered Fast.</h1>
+        <p>Save 25% by ordering directly from us. Skip the commissions, enjoy the savings.</p>
+        <div class="hero-actions">
+          <a href="order.html"><md-filled-tonal-button>Start Your Order</md-filled-tonal-button></a>
+          <a href="menu.html"><md-outlined-button>View Full Menu</md-outlined-button></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2>Popular Dishes</h2>
+      <div class="grid">
+        <md-outlined-card class="dish-card">
+          <img slot="media" src="https://pplx-res.cloudinary.com/image/upload/v1755815129/dalle3_images/g77zvussnqerhyavcoo1.png" alt="Hyderabadi Biryani">
+          <div class="card-content">
+            <h3>Hyderabadi Biryani</h3>
+            <p class="price">₹280 <span class="old-price">₹350</span></p>
+          </div>
+        </md-outlined-card>
+        <md-outlined-card class="dish-card">
+          <img slot="media" src="https://pplx-res.cloudinary.com/image/upload/v1755815148/dalle3_images/dxkvqztt4t1qhqxv08xy.png" alt="Butter Chicken">
+          <div class="card-content">
+            <h3>Butter Chicken</h3>
+            <p class="price">₹320 <span class="old-price">₹400</span></p>
+          </div>
+        </md-outlined-card>
+        <md-outlined-card class="dish-card">
+          <img slot="media" src="https://pplx-res.cloudinary.com/image/upload/v1755815167/dalle3_images/vl1eumkvcleahyt1exob.png" alt="Paneer Tikka">
+          <div class="card-content">
+            <h3>Paneer Tikka</h3>
+            <p class="price">₹240 <span class="old-price">₹300</span></p>
+          </div>
+        </md-outlined-card>
+        <md-outlined-card class="dish-card">
+          <img slot="media" src="https://pplx-res.cloudinary.com/image/upload/v1755815185/dalle3_images/cnnaenjyo2e9brtulrbl.png" alt="Chilli Chicken">
+          <div class="card-content">
+            <h3>Chilli Chicken</h3>
+            <p class="price">₹280 <span class="old-price">₹350</span></p>
+          </div>
+        </md-outlined-card>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Spice Corner. Built with Material Design.</p>
+  </footer>
+
 </body>
 </html>
